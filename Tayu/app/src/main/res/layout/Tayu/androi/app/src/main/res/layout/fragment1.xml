@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#F77ACFFD">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_margin="0dp">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/getBtn"
+            android:layout_width="133dp"
+            android:layout_height="50dp"
+            android:background="#F77ACFFD"
+            android:text="오늘 날씨 검색"
+            android:textSize="15dp" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/getBtn2"
+            android:layout_width="133dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/spinner"
+            android:background="#F77ACFFD"
+            android:text="내일 날씨 검색" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/getBtn3"
+            android:layout_width="133dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#F77ACFFD"
+            android:text="모레 날씨 검색" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity ="center"
+        android:fillViewport="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="" />
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/aaa"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#7ab9fd"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="161dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:text="TAYU"
+        android:textColor="#fff"
+        android:textSize="120dp"
+        android:fontFamily="@font/hanna"
+        android:layout_marginTop="30dp"
+        />
+
+
+</LinearLayout>
+
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_email"
+        android:hint="이메일을 입력하세요"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_lock"
+        android:hint="비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        android:padding="16dp" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_margin="10dp"
+        android:id="@+id/buttonSignup"
+        android:layout_width="253dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_bg"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:fontFamily="@font/hanna"
+        />
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_margin="10dp"
+        android:id="@+id/textViewSignin"
+        android:layout_width="253dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_bg"
+        android:text="회원가입"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:fontFamily="@font/hanna"
+        />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/textViewFindpassword"
+        android:layout_width="252dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:text="비밀번호 찾기"
+        android:textSize="20dp"
+        android:textColor="#7ab9fd"/>
+
+    <TextView
+        android:id="@+id/textviewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorAccent" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/Google_Login"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</LinearLayout>
+
+

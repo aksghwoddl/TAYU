@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7ab9fd"
+    tools:context="com.js.firebaseauthentication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="#7ab9fd"
+            android:text="Back"
+            android:textColor="@android:color/background_light"
+            android:textSize="30dp" />
+
+        <Button
+        android:id="@+id/textViewSignin"
+        android:layout_width="131dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#7ab9fd"
+        android:text="Sign up"
+        android:textColor="@android:color/background_light"
+        android:textSize="28dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="TAYU"
+        android:textColor="@android:color/background_light"
+        android:textSize="128sp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:hint="Enter password"
+        android:inputType="textPassword" />
+
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/buttonSignup"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="#7ab9fd"
+            android:text="로그인"
+            android:layout_gravity="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textViewFindpassword"
+            android:layout_width="121dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/buttonSignup"
+            android:layout_toRightOf="@+id/buttonSignup"
+            android:background="#7ab9fd"
+            android:text="비밀번호"
+            android:textColor="@android:color/background_light"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    | <TextView
+    android:layout_gravity="center_horizontal"
+    android:textColor="@color/colorAccent"
+    android:id="@+id/textviewMessage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/Google_Login"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</LinearLayout>
+
+

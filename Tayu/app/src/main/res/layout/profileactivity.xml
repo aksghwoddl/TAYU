@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="#7ab9fd"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="100dp">
+
+        <TextView
+            android:id="@+id/user_dist_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/hanna"
+            android:text="오늘 당신이 달린 거리는 0 KM 입니다."
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/user_time_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/hanna"
+            android:text="오늘 당신이 달린 시간은 0초 입니다."
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textviewUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/hanna"
+            android:text="환영합니다. 유저 님 "
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+
+        <Button
+            android:id="@+id/buttonMain"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:fontFamily="@font/hanna"
+            android:text="달리러 가자!"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <Button
+           android:id="@+id/testClub"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:background="#fff"
+           android:fontFamily="@font/hanna"
+           android:text="다같이 달리자!"
+           android:textColor="#000"
+           android:textSize="20dp" />
+
+   </LinearLayout>
+
+
+        <Button
+            android:id="@+id/ar"
+            android:text="AR"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:fontFamily="@font/swagger"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="50dp">
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:text="로그아웃"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:fontFamily="@font/hanna"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/textviewDelete"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:text="회원탈퇴"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:fontFamily="@font/hanna"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7ab9fd"
+        >
+
+    </LinearLayout>
+
+
+</LinearLayout>

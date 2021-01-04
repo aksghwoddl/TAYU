@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tayu</string>
+    <string name="logout">로그아웃</string>
+    <string name="signout">회원탈퇴</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "494500179960",
+    "firebase_url": "https://tayu-8fd3a.firebaseio.com",
+    "project_id": "tayu-8fd3a",
+    "storage_bucket": "tayu-8fd3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494500179960:android:01d42d43bfd936a082700d",
+        "android_client_info": {
+          "package_name": "com.example.Tayu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494500179960-rp41qlr0sr7g00kopthq7ecghb49qejs.apps.googleusercontent.com",
+          "client_type": 3,
+          "android_info": {
+            "package_name": "com.example.Tayu",
+            "certificate_hash": "3f2e7c0bb91527c678d85bc8b241e333bffa6adb"
+          }
+        },
+        {
+          "client_id": "494500179960-vds2fsckh757kt0hjjhm7e4iearvngi2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb4d6UGzCCsrbjDT645WySAkPdRS3iziY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494500179960-vds2fsckh757kt0hjjhm7e4iearvngi2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
