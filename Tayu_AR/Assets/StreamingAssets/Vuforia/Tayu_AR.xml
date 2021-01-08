@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="wheel" size="0.084666 0.084666" />
+    <ImageTarget name="chin" size="0.084666 0.084666" />
+    <ImageTarget name="hand" size="0.084666 0.084666" />
+    <ImageTarget name="pe" size="0.084666 0.084666" />
+    <ImageTarget name="crack" size="0.084666 0.084666" />
+    <ImageTarget name="bike" size="0.084666 0.053710" />
+    <ImageTarget name="1000" size="0.127529 0.072266" />
+  </Tracking>
+</QCARConfig>
