@@ -20,6 +20,8 @@
 <img src="https://img.shields.io/badge/FireBase-FFCA28?style=for-the-badge&logo=FireBase&logoColor=white">
 </p>
 
+<br>
+
 ### 🛠 구현 사항 (자세한 내용은 '관련자료/타유_Android_설명.hwp'를 확인 바랍니다.)
 
 1️⃣ FireBase Authentication 과 Real Time Database를 활용하여 회원정보를 생성하였습니다.
