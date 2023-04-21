@@ -8,9 +8,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.tayu.domain.model.club.Club;
+import com.example.tayu.ui.activity.club.ClubActivity;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
@@ -42,7 +43,7 @@ public class AddClub extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),ClubActivity.class);
+                Intent intent=new Intent(getApplicationContext(), ClubActivity.class);
 
                 String test=""+et1.getText();
                 String ts=""+et2.getText();
@@ -73,13 +74,13 @@ public class AddClub extends AppCompatActivity {
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(AddClub.this,"저장완료",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(com.example.tayu.ui.activity.club.AddClub.this,"저장완료",Toast.LENGTH_SHORT).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(AddClub.this,"저장실패",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(com.example.tayu.ui.activity.club.AddClub.this,"저장실패",Toast.LENGTH_SHORT).show();
                     }
                 });
     }

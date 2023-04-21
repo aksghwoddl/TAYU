@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.tayu.Fragment4"
+    tools:context="com.example.tayu.ui.fragment.weather.WeatherFragment"
     android:background="#72B7D6"
     android:orientation="vertical">
     <TextView

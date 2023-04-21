@@ -28,7 +28,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run(){
                 startActivity(new Intent(getApplication(), MainActivity.class));
                 /* 스플래시 액티비티를 스택에서 제거. */
-                SplashActivity.this.finish();
+                com.example.tayu.ui.activity.splash.SplashActivity.this.finish();
             }
         }, SPLASH_DISPLAY_TIME);
     }

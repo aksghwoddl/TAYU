@@ -2,12 +2,16 @@ package com.example.tayu;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.tayu.ui.activity.TmapNaviActivity;
+import com.example.tayu.ui.fragment.bluetooth.BluetoothFragment;
+import com.example.tayu.ui.fragment.navi.NaviFragment;
+import com.example.tayu.ui.fragment.timer.TimerFragment;
+import com.example.tayu.ui.fragment.weather.WeatherFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity
@@ -15,33 +19,12 @@ public class HomeActivity extends AppCompatActivity
 
     BottomNavigationView bottomNavigationView;
 
-    Fragment2 fragment2;
-    Fragment3 fragment3;
-    Fragment4 fragment4;
-    Fragment5 fragment5;
+    NaviFragment naviFragment;
+    BluetoothFragment bluetoothFragment;
+    WeatherFragment weatherFragment;
+    TimerFragment timerFragment;
     String start2,startX,startY=null;
     String end2,endX,endY=null;
-
-    @Override
-    public void onDataSet(String stName, String stX, String stY, String edName, String edX, String edY) {
-        start2=stName;
-        startX=stX;
-        startY=stY;
-        end2=edName;
-        endX=edX;
-        endY=edY;
-
-        if(start2!=null&&end2!=null) {
-            Intent intent = new Intent(this, TmapTest1.class);
-            intent.putExtra("stPoint", "" + start2);
-            intent.putExtra("stX",""+startX);
-            intent.putExtra("stY",""+startY);
-            intent.putExtra("edPoint", "" + end2);
-            intent.putExtra("edX", "" + endX);
-            intent.putExtra("edY", "" + endY);
-            startActivity(intent);
-        }
-    }
 
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,10 +34,10 @@ public class HomeActivity extends AppCompatActivity
 
         //프래그먼트 생성
 
-        fragment2 = new Fragment2();
-        fragment3 = new Fragment3();
-        fragment4 = new Fragment4();
-        fragment5 = new Fragment5();
+        fragment2 = new NaviFragment();
+        fragment3 = new BluetoothFragment();
+        fragment4 = new WeatherFragment();
+        fragment5 = new TimerFragment();
         //제일 처음 띄워줄 뷰를 세팅해줍니다.
         // commit();까지 해줘야 합니다.
         getSupportFragmentManager().beginTransaction().replace(R.id.main_layout,fragment4).commitAllowingStateLoss();

@@ -1,6 +1,5 @@
 package com.example.tayu;
 
-import android.content.ClipData;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,15 +8,17 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.tayu.domain.model.club.ClubItemData;
+
 import java.util.ArrayList;
 
 public class ListAdapter extends BaseAdapter {
     LayoutInflater inflater=null;
     Context mContext=null;
-    ArrayList<ItemData> sample;
+    ArrayList<ClubItemData> sample;
 
 
-    public ListAdapter(Context context,ArrayList<ItemData> data){
+    public ListAdapter(Context context,ArrayList<ClubItemData> data){
         mContext=context;
         sample=data;
         inflater=LayoutInflater.from(mContext);
@@ -29,7 +30,7 @@ public class ListAdapter extends BaseAdapter {
     }
 
     @Override
-    public ItemData getItem(int position) {
+    public ClubItemData getItem(int position) {
         return sample.get(position);
     }
 

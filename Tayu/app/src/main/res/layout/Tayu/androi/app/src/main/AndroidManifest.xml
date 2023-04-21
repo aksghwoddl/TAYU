@@ -21,11 +21,11 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         android:usesCleartextTraffic="true">
 
-        <activity android:name=".ClubContent"></activity>
-        <activity android:name=".AddClub" />
-        <activity android:name=".ClubActivity" />
-        <activity android:name=".TmapTest1" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".ui.activity.club.ClubContent"></activity>
+        <activity android:name=".ui.activity.club.AddClub" />
+        <activity android:name=".ui.activity.club.ClubActivity" />
+        <activity android:name=".ui.activity.TmapNaviActivity" />
+        <activity android:name=".ui.activity.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,7 +36,7 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".ui.activity.home.HomeActivity" />
     </application>
 
 </manifest>

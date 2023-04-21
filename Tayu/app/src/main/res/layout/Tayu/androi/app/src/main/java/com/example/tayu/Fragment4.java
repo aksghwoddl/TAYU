@@ -1,7 +1,6 @@
 package com.example.tayu;
 
 
-import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -10,8 +9,6 @@ import android.graphics.Color;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -37,37 +34,26 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.airbnb.lottie.L;
-import com.google.gson.Gson;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
+import com.example.tayu.data.api.ApiInterface;
+import com.example.tayu.data.model.weather.Forecast;
+import com.example.tayu.data.model.weather.WeatherTest;
+import com.example.tayu.domain.model.tmap.POI;
 import com.skt.Tmap.TMapData;
 import com.skt.Tmap.TMapPOIItem;
-import com.skt.Tmap.TMapPoint;
 import com.skt.Tmap.TMapView;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
-import static android.content.ContentValues.TAG;
-import static android.content.Context.LOCATION_SERVICE;
-import static androidx.core.content.ContextCompat.getSystemService;
 
 
 public class Fragment4 extends Fragment {

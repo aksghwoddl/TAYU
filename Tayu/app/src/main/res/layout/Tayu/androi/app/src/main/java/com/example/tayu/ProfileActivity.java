@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.tayu.ui.activity.club.ClubActivity;
+import com.example.tayu.ui.activity.home.HomeActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -106,7 +108,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             startActivity(new Intent(this, HomeActivity.class));
         }
         if(view==testClub){
-            startActivity(new Intent(this,ClubActivity.class));
+            startActivity(new Intent(this, ClubActivity.class));
         }
     }
 }

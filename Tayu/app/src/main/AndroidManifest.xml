@@ -29,12 +29,12 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <meta-data android:name="com.google.ar.core" android:value="required" />
-        <activity android:name=".DeviceListActivity" />
-        <activity android:name=".ClubContent"/>
-        <activity android:name=".AddClub" />
-        <activity android:name=".ClubActivity" />
-        <activity android:name=".TmapTest1" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".ui.fragment.bluetooth.DeviceListActivity" />
+        <activity android:name=".ui.activity.club.ClubContent"/>
+        <activity android:name=".ui.activity.club.AddClub" />
+        <activity android:name=".ui.activity.club.ClubActivity" />
+        <activity android:name=".ui.activity.TmapNaviActivity" />
+        <activity android:name=".ui.activity.splash.SplashActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,9 +46,9 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".ui.activity.home.HomeActivity" />
         <activity
-            android:name=".augmentedimage.AugmentedImageActivity"
+            android:name=".ui.activity.ar.AugmentedImageActivity"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar"

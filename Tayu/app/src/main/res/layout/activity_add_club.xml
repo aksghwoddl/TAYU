@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#7ab9fd"
     android:orientation="vertical"
-    tools:context="com.example.tayu.AddClub">
+    tools:context="com.example.tayu.ui.activity.club.AddClub">
 
     <LinearLayout
         android:layout_width="match_parent"

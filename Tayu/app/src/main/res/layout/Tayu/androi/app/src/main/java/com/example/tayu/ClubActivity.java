@@ -1,22 +1,18 @@
 package com.example.tayu;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
+import com.example.tayu.domain.model.club.ClubItemData;
+import com.example.tayu.ui.activity.club.AddClub;
+import com.example.tayu.ui.activity.club.adapter.ClubListAdapter;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -24,11 +20,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class ClubActivity extends AppCompatActivity {
 
-    ArrayList<ItemData> clubList;
+    ArrayList<ClubItemData> clubList;
     int count=0;
     static boolean calledAlready=false;
     String strTitle=null;
@@ -45,7 +40,7 @@ public class ClubActivity extends AppCompatActivity {
         this.InitializeClubData();
 
         final ListView listView=(ListView)findViewById(R.id.clublist);
-        final ListAdapter myAdapter= new ListAdapter(this,clubList);
+        final ClubListAdapter myAdapter= new ClubListAdapter(this,clubList);
 
         listView.setAdapter(myAdapter);
         if(!calledAlready){
@@ -63,7 +58,7 @@ public class ClubActivity extends AppCompatActivity {
                     strSize = fileSnapshot.child("strSize").getValue(String.class);
                     strLoc = fileSnapshot.child("strLoc").getValue(String.class);
                     strCon=fileSnapshot.child("strCon").getValue(String.class);
-                    clubList.add(new ItemData(R.drawable.tayuimg,""+strTitle,""+strSize,""+strLoc,""+strCon));
+                    clubList.add(new ClubItemData(R.drawable.tayuimg,""+strTitle,""+strSize,""+strLoc,""+strCon));
                     myAdapter.notifyDataSetChanged();
                     count++;
                 }
@@ -92,7 +87,7 @@ public class ClubActivity extends AppCompatActivity {
 
     Button btn=(Button)findViewById(R.id.Back);
     public void InitializeClubData(){
-        clubList=new ArrayList<ItemData>();
+        clubList=new ArrayList<ClubItemData>();
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
